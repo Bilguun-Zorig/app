@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" type="text/css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/mediaqueries.css">
+    <title>Bilguun Zorigtbaatar</title>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Bilguun Zorigtbaatar</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Bilguun Zorigtbaatar</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Portfolio</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./static/images/profile-pic.png" alt="Bilguun Zorigtbaatar profile picture" id="profile-img">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">
+                Hello, I am
+            </p>
+            <h1 class="title">Bilguun Zorigtbaatar</h1>
+            <p class="section__text__p2">Full-Stack Developer and Software Test Engineer</p>
+            <div class="btn-container">
+                <button class="btn btn-light" onclick="window.open('./static/resume.pdf')">Download CV</button>
+                <button class="btn btn-light" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <ul class="list-unstyled list-inline">
+                    <li class="list-inline-item">
+                        <a href="https://www.linkedin.com/in/bilguun-zorigtbaatar/" class="btn-floating btn-sm text-dark" style="font-size: 35px;"><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://github.com/Bilguun-Zorig" class="btn-floating btn-sm text-dark" style="font-size: 35px;"><i class="fa-brands fa-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About me</h1>
+        <div class="about-section">
+            <div class="about__pic-container">
+                <img src="./static/images/profile-pic.png" alt="Profile Picture" class="about-pic">
+                <div class="about-me-text">
+                    <p>Hi!, I'm Bilguun Zorigtbaatar, software test engineer and full-stack web developer based in Fairfax, VA. After working as a QA engineer for over 7 years, i have decided to the leap to pursue a career in software web development.</p>
+                </div>
+            </div>
+            <div class="about-details-container">
+                <div class="details-container">
+                    <img src="./static/images/education.png" alt="Education Icon" class="icon">
+                    <h3>Education</h3>
+                    <p>MBA in Marketing (Sep 2017 - May 2020)<br>M.Sc. Information Technology (Jan 2022 - Aug 2024)<br>Coding Dojo (2023)</p>
+                    <h3>Technologies I've worked with</h3>
+                    <div class="tech-containers">
+                        <div class="frontend">
+                            <h5 class="tech-sub-title">Frontend</h5>
+                            <div class="tech-container">
+                                <article class="tech-item">
+                                    <img src="./static/images/htmllogo.png" alt="Experience icon" class="icon">
+                                    <h5>HTML</h5>
+                                </article>
+                                <article class="tech-item">
+                                    <img src="./static/images/csslogo.png" alt="Experience icon" class="icon">
+                                    <h5>CSS</h5>
+                                </article>
+                                <article class="tech-item">
+                                    <img src="./static/images/reactlogo2.png" alt="Experience icon" class="icon">
+                                    <h5>React</h5>
+                                </article>
+                                <article class="tech-item">
+                                    <img src="./static/images/bootstraplogo.png" alt="Experience icon" class="icon">
+                                    <h5>Bootstrap</h5>
+                                </article>
+                                <article class="tech-item">
+                                    <img src="./static/images/jinja_logo.svg.png" alt="Experience icon" class="icon">
+                                    <h5>Jinja</h5>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="backend">
+                            <h5 class="tech-sub-title">Backend</h5>
+                            <div class="tech-container">
+                                <article class="tech-item">
+                                    <img src="./static/images/nodelogo.png" alt="Experience icon" class="icon">
+                                    <h5>Node.js</h5>
+                                </article>
+                                <article class="tech-item">
+                                    <img src="./static/images/expresslogo.png" alt="Experience icon" class="icon">
+                                    <h5>Express.js</h5>
+                                </article>
+                                <article class="tech-item">
+                                    <img src="./static/images/mysql.png" alt="Experience icon" class="icon">
+                                    <h5>MySQL</h5>
+                                </article>
+                                <article class="tech-item">
+                                    <img src="./static/images/mongodblogo.png" alt="Experience icon" class="icon">
+                                    <h5>MongoDB</h5>
+                                </article>
+                                <article class="tech-item">
+                                    <img src="./static/images/postman.png" alt="Experience icon" class="icon">
+                                    <h5>Postman</h5>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="languages">
+                            <h5 class="tech-sub-title">Languages</h5>
+                            <div class="tech-container">
+                                <article class="tech-item">
+                                    <img src="./static/images/java.png" alt="Experience icon" class="icon">
+                                    <div>
+                                        <h5>Java</h5>
+                                    </div>
+                                </article>
+                                <article class="tech-item">
+                                    <img src="./static/images/jslogo.png" alt="Experience icon" class="icon">
+                                    <div>
+                                        <h5>JavaScript</h5>
+                                    </div>
+                                </article>
+                                <article class="tech-item">
+                                    <img src="./static/images/pythonlogo.png" alt="Experience icon" class="icon">
+                                    <div>
+                                        <h5>Python</h5>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="devops-tools">
+                            <h5 class="tech-sub-title">Devops Tools</h5>
+                            <div class="tech-container">
+                                <article class="tech-item">
+                                    <img src="./static/images/gitlogo.png" alt="Experience icon" class="icon">
+                                    <div>
+                                        <h5>Git</h5>
+                                    </div>
+                                </article>
+                                <article class="tech-item">
+                                    <img src="./static/images/githublogo.png" alt="Experience icon" class="icon">
+                                    <div>
+                                        <h5>Github</h5>
+                                    </div>
+                                </article>
+                                <article class="tech-item">
+                                    <img src="./static/images/npm.png" alt="Experience icon" class="icon">
+                                    <div>
+                                        <h5>npm</h5>
+                                    </div>
+                                </article>
+                                <article class="tech-item">
+                                    <img src="./static/images/atlassinlogo.png" alt="Experience icon" class="icon">
+                                    <div>
+                                        <h5>Jira</h5>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./static/images/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container" id="job-experience">
+                    <div class="sub-title">
+                            <div class="sub-title-text">
+                                <h5><strong>QA Automation Engineer</strong></h5>
+                                <h5>Farm Credit Bank of Texas</h5>
+                            </div>
+                            <p>2022 - present</p>
+                    </div>
+                    <ul class="sub-title-text">
+                        <li><strong>Automation Framework Development:</strong> Developed a robust automation framework using Selenium WebDriver, Cucumber (BDD), and Page Object Model.</li>
+                        <li><strong>Behavior Driven Development (BDD):</strong> Executed BDD with Cucumber, writing Features, Scenarios, and Step Definitions in Gherkin.</li>
+                        <li><strong>Comprehensive Testing:</strong> Conducted comprehensive UI, Functional, Regression, and API testing using Selenium, Maven, Jenkins, Postman, and RestAssured.</li>
+                    </ul>
+                </div>
+                <div class="details-container" id="job-experience">
+                        <div class="sub-title">
+                            <div class="sub-title-text">
+                                <h5><strong>QA Lead Automation Engineer</strong></h5>
+                                <h5>TechCricle Solutions, LLC</h5>
+                            </div>
+                            <p>2019 - 2020</p>
+                        </div>
+                    <ul class="sub-title-text">
+                        <li><strong>Framework Development:</strong> Designed and maintained automation frameworks with Cucumber, JUnit, TestNG, and Page Object Model.</li>
+                        <li><strong>Test Planning & Execution:</strong> Developed and executed test plans and cases (manual and automated), collaborating with developers for bug fixes.</li>
+                        <li><strong>API & Back-End Testing:</strong> Performed API testing with Postman and RestAssured, and conducted back-end testing using SQL.</li>
+                    </ul>
+                </div>
+                <div class="details-container" id="job-experience">
+                        <div class="sub-title">
+                            <div class="sub-title-text">
+                                <h5><strong>QA Automation Engineer</strong></h5>
+                                <h5>Petco, Inc</h5>
+                            </div>
+                            <p>2017 - 2019</p>
+                        </div>
+                    <ul class="sub-title-text">
+                        <li><strong>Test Automation & Framework Development:</strong> Developed and maintained a BDD automation framework using Selenium WebDriver, Java, Cucumber, Maven, and Eclipse.</li>
+                        <li><strong>Test Case Design & Execution:</strong> Designed and executed test cases (integration, regression, UAT, smoke) with Selenium WebDriver and Perfecto Driver.
+                        </li>
+                        <li><strong>API & Back-End Testing:</strong> Conducted API testing with Postman and RestAssured, and performed back-end testing using SQL.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <img src="./static/images/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My</p>
+        <h1 class="title">Portfolio</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <!-- Add project image -->
+                    <img src="./static/images/project1.png" alt="Project 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">MyRecipe</h2>
+                <div class="btn-container">
+                    <button class="btn btn-light project-btn" onclick="location.href='https://github.com/Bilguun-Zorig/myrecipes.git'">
+                        Github
+                    </button>
+                    <button class="btn btn-light project-btn" onclick="location.href='https://youtu.be/ey3GEv2CmlA'">
+                        Demo Video
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <!-- Add project image -->
+                    <img src="./static/images/project2.png" alt="Project 2" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-title">BooBoo</h2>
+                <div class="btn-container">
+                    <button class="btn btn-light project-btn" onclick="location.href='https://github.com/Bilguun-Zorig/booboo.git'">
+                        Github
+                    </button>
+                    <button class="btn btn-light project-btn" onclick="location.href='https://youtu.be/0jqimpqrx2w'">
+                        Demo Video
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <img src="./static/images/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <ul class="list-unstyled list-inline">
+                    <li class="list-inline-item">
+                        <p>
+                            <a href="mailto:bilguinzorigt07@gmail.com" class="btn-floating btn-sm text-dark" style="font-size: 30px;"><i class="fa-solid fa-envelope"></i></a>
+                            bilguinzorigt07@gmail.com
+                        </p>
+                    </li>
+                    <li class="list-inline-item">
+                        <p>
+                            <a href="https://www.linkedin.com/in/bilguun-zorigtbaatar/" class="btn-floating btn-sm text-dark" style="font-size: 30px;"><i class="fab fa-linkedin-in"></i></a>
+                            LinkedIn
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#desktop-nav">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Bilguun Zorigtbaatar. All Rights Reserved.</p>
+    </footer>
+    <script src="static/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
